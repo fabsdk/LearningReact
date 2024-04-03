@@ -1,0 +1,89 @@
+
+@font-face {
+    font-family: 'ifood';
+    src: url('C:\Users\fabia\OneDrive\Documents\Projetos BCC\ifood-project1\src\Components\iFoodRCTextos-Regular.woff2') format('woff2'),
+         url('C:\Users\fabia\OneDrive\Documents\Projetos BCC\ifood-project1\src\Components\iFoodRCTextos-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.main{
+    font-family: 'ifood', sans-serif;
+}
+
+.categorias-ifood {
+    display: flex;
+    justify-content: center;
+}
+
+.categoria-item-maior {
+    margin: 20px;
+    height: 38vh;
+    width: 70vh;
+    border-radius: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.item-hambuguer {
+    background-color: #ea1d2c;
+}
+
+.item-carrinho {
+    background-color: #b6d048;
+}
+
+.item-hambuguer img {
+    transform: translate(200px, -200px);
+    width: 18rem;
+}
+
+.item-hambuguer p {
+    display: inline-block;
+    padding: 0.8rem 3.2rem;
+    margin-top: 160px;
+    font-size: 3vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 15px;
+    color: white;
+    transform: translate(10px, -45px);
+}
+
+.item-carrinho p {
+    display: inline-block;
+    margin-top: 130px;
+    font-size: 3vh;
+    padding: 0.8rem 3.2rem;
+    background-color: rgba(0, 0, 0, 0.068);
+    border-radius: 15px;
+    color: white;
+    transform: translate(20px, -20px);
+}
+
+.item-hambuguer h2,
+.item-carrinho h2 {
+    transform: translate(20px, 20px);
+    font-size: 3rem;
+    color: white;
+
+}
+
+.item-carrinho img {
+    transform: translate(220px, -185px);
+    width: 18rem;
+}
+
+.categoria-item-maior:hover{
+    cursor: pointer;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.categoria-item-maior:hover::after{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: transparent; /* Altere a cor conforme necessário */
+    transition: background-color 0.3s ease-in-out; /* Adiciona uma transição suave */
+}
