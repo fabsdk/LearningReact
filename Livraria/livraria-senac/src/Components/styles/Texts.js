@@ -30,6 +30,24 @@ export const Input = styled.input`
     font-family: 'Roboto', sans-serif;
     `;
 
+export const Label = styled.label`
+    font-size: 16px;
+    color: black;
+    font-weight: bold;
+    `;
+
+export const InputUsuario = styled.input`
+    width: 300px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    padding: 8px
+    background-color: #fff;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    `;
+
+
 
 
 

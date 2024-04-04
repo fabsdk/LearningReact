@@ -1,28 +1,29 @@
+import { Link } from 'react-router-dom';
 import { Menu } from "../styles/Containers";
 import { ImagemLogo } from "../styles/Imagens";
-import { Lista, Item } from "../styles/Lista";
+import { Lista } from "../styles/Lista";
+import { Botao } from "../styles/Button";
 import Logo from "../imgs/logo.png";
 
-
 const lista = ["Home", "Sobre", "Contato", "Login", "Cadastro"];
+
 function MenuBar() {
+  const renderButton = (item, index) => {
+    const toPath = item === "Home" ? "/" : `/${item.toLowerCase()}`;
+    return (
+      <Link key={index} to={toPath}>
+        <Botao>{item}</Botao>
+      </Link>
+    );
+  };
+
   return (
-    <div>
-      <Menu>
-        <ImagemLogo src={Logo}/>
-        <Lista>
-          {lista.map((item, index) => {
-            return <Item key={index}>{item}</Item>
-          })}
-        </Lista>
-        <Lista>
-
-
-        </Lista>
-      
-      </Menu>
-    </div>
-
+    <Menu>
+      <ImagemLogo src={Logo} alt="Logo" />
+      <Lista>
+        {lista.map(renderButton)}
+      </Lista>
+    </Menu>
   );
 }
 
