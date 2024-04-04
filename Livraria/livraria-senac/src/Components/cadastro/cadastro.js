@@ -36,6 +36,6 @@ const Cadastro = () => {
       </ContainerCaixa>
     </CenterDiv>
   );
-};
+};i
 
 export default Cadastro;
