@@ -30,3 +30,29 @@ export const FormRow = styled.div`
     justify-content: center;
     margin-bottom: 15px;
     `;
+
+export const CadastroContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    width: 500px;
+`;
+
+
+export const ContainerCaixa = styled.div`
+  display: flex;
+  flex-direction: ${(props) => props.direction || "row"};
+  width: 100%;
+  justify-content: center;
+  gap: 24px;
+  align-items: center;
+`;
+
+export const CenterDiv = styled.div`
+  margin-top: 10rem;
+`;

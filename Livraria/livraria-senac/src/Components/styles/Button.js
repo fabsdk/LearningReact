@@ -29,13 +29,19 @@ export const Botao = styled.button`
 
 
 export const ButtonCadastro = styled.button`
-    width: 100px;
-    height: 30px;
+    width: 110px;
+    height: 40px;
     border-radius: 5px;
     border: 1px solid black;
     padding: 8px;
-    background-color: white;
+    background-color: #000000;
     cursor: pointer;
     font-size: 16px;
+    color: white;
     font-family: 'Roboto', sans-serif;
-    `;
+    transition: background-color 0.3s ease; /* Adicione essa linha para o efeito de transição */
+
+    &:hover {
+        background-color: #333; /* Cor diferente quando o mouse estiver sobre o botão */
+    }
+`;
