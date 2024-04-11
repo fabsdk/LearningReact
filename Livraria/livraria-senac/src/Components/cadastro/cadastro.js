@@ -9,7 +9,7 @@ const Cadastro = () => {
     <CenterDiv>
       <Titulo color="white">Bem vindo, faça seu Cadastro</Titulo>
       <ContainerCaixa>
-        <form onSubmit={handleSubmit}>
+        <form>
           <CadastroContainer>
             <FormRow>
               <Label>Nome:</Label>
@@ -29,6 +29,6 @@ const Cadastro = () => {
       </ContainerCaixa>
     </CenterDiv>
   );
-};i
+};
 
 export default Cadastro;

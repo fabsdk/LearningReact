@@ -2,12 +2,15 @@
 //do meu projeto para poder usá-lo
 const express = require('express');
 const livrosImportados = require('./services/livroServices');
+const usersServices = require('./services/usersServices');
+const body = require('body-parser');
 const cors = require('cors');
 const e = require('express');
 
 //crio uum objeto app para recer todas as funções do express
 const app = express();
 app.use(cors());
+app.use(body.json());
 
 
 //callback => função que é passada como parâmetro para ser executada
@@ -28,4 +31,15 @@ app.get('/buscarLivrosPorTitulos/:title', (req, res)=>{
 
 });
 
-app.listen(8000)
+app.post('/addUser', (req, res)=>{
+    const {name, email, password} = req.body;
+    if(name && password && email){
+        usersServices.addUser(name, email, password);
+        res.status(200).send('Usuário cadastrado com sucesso');
+    }
+    else {
+        res.status(400).send('Erro ao cadastrar usuário');
+    }
+})
+
+app.listen(8080)

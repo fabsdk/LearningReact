@@ -38,8 +38,9 @@ export const CadastroContainer = styled.div`
     align-items: center;
     margin-top: 50px;
     padding: 20px;
+    padding-top: 40px;
     border-radius: 10px;
-    background-color: #f0f0f0;
+    background-color: #c4c0c0;
     width: 500px;
 `;
 

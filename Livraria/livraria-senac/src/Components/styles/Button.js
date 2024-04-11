@@ -36,7 +36,7 @@ export const ButtonCadastro = styled.button`
     padding: 8px;
     background-color: #000000;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 19px;
     color: white;
     font-family: 'Roboto', sans-serif;
     transition: background-color 0.3s ease; /* Adicione essa linha para o efeito de transição */

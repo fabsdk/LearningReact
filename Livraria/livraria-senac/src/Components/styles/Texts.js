@@ -31,7 +31,7 @@ export const Input = styled.input`
     `;
 
 export const Label = styled.label`
-    font-size: 16px;
+    font-size: 19px;
     color: black;
     font-weight: bold;
     padding: 8px;
