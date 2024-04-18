@@ -1,8 +1,7 @@
-POST http://localhost:8080/addUser
+POST http://localhost:8080/login
 Content-Type: application/json
 
 {
-    "name": "Vini Petratti",
-    "email": "vinipetra@gmail.com",
-    "password": "vinizinhopetrattinho"
+    "email": "fabianakamamoto@hotmail.com",
+    "password": "senha123"
 }

@@ -34,7 +34,7 @@ export const ButtonCadastro = styled.button`
     border-radius: 5px;
     border: 1px solid black;
     padding: 8px;
-    background-color: #000000;
+    background-color: #4590BF;
     cursor: pointer;
     font-size: 19px;
     color: white;

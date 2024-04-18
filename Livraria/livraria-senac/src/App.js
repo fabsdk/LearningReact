@@ -4,6 +4,7 @@ import MaisBuscados from './Components/maisBuscados/maisBuscados';
 import MenuBar from './Components/navbar/MenuBar';
 import Pesquisa from './Components/pesquisa/Pesquisa';
 import Cadastro from './Components/cadastro/cadastro';
+import Login from './Components/login/login';
 
 function App() {
   return (
@@ -22,6 +23,12 @@ function App() {
         <Route path='/cadastro' element={
           <>
           <Cadastro />
+          </>
+        } />
+
+        <Route path='/login' element={
+          <>
+          <Login />
           </>
         } />
 

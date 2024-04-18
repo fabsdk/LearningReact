@@ -32,7 +32,7 @@ export const Input = styled.input`
 
 export const Label = styled.label`
     font-size: 19px;
-    color: black;
+    color: white;
     font-weight: bold;
     padding: 8px;
     `;

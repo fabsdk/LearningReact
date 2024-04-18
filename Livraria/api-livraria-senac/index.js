@@ -42,4 +42,22 @@ app.post('/addUser', (req, res)=>{
     }
 })
 
+app.post('/login', async (req, res)=>{
+    const {email, password} = req.body;
+
+    if(email && password){
+    const result = await usersServices.ValidateLogin(email, password);
+
+        if(result){
+            res.status(200).send('Login realizado com sucesso');
+        }
+        else{
+            res.status(400).send('Erro ao realizar login');
+        }
+    }
+    else {
+        res.status(400).send('Erro ao realizar login');
+    }
+})
+
 app.listen(8080)

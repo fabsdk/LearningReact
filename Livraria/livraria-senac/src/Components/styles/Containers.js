@@ -40,7 +40,8 @@ export const CadastroContainer = styled.div`
     padding: 20px;
     padding-top: 40px;
     border-radius: 10px;
-    background-color: #c4c0c0;
+    background-color: #092640;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 90); /* Sombra */
     width: 500px;
 `;
 

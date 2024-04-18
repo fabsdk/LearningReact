@@ -13,3 +13,17 @@ exports.addUser = (name, email, password) => {
     //salvar o json no arquivo
     fs.writeFileSync('users.json', JSON.stringify(users), 'utf-8');
 }
+
+exports.ValidateLogin = (email, password) => {
+    //ler o arquivo
+    const userData = JSON.parse(fs.readFileSync('users.json', 'utf-8'));
+
+    const user = userData.find(user => user.email === email && user.password === password);
+
+    if(!user || user.password !== password){
+        return false;
+    }
+
+    return true;
+
+}
