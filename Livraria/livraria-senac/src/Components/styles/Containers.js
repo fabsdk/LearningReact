@@ -58,3 +58,29 @@ export const ContainerCaixa = styled.div`
 export const CenterDiv = styled.div`
   margin-top: 10rem;
 `;
+
+export const FeedbackContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border-radius: 5px;
+  width: 96%;
+  margin-top: 20px;
+  font-weight: bold;
+
+  &.success {
+    background-color: #d4edda; /* verde */
+    color: #155724; /* tom escuro para o texto */
+  }
+
+  &.error {
+    background-color: #f8d7da; /* vermelho claro */
+    color: #721c24; /* tom escuro para o texto */
+  }
+
+  &.warning {
+    background-color: #fff3cd; /* amarelo claro */
+    color: #856404; /* tom escuro para o texto */
+  }
+`;

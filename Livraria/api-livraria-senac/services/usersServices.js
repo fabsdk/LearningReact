@@ -1,6 +1,22 @@
 const fs = require('fs');
 
+const checkEmailExists = (email) => {
+    // Ler o arquivo
+    const jsonData = fs.readFileSync('users.json', 'utf-8');
+    // Converter o arquivo para um JSON
+    const users = JSON.parse(jsonData);
+
+    // Verificar se o email já está presente no banco de dados
+    const existingUser = users.find(user => user.email === email);
+    return existingUser !== undefined;
+}
+
+exports.checkEmailExists = checkEmailExists
+
 exports.addUser = (name, email, password) => {
+    if (checkEmailExists(email)) {
+        return;
+    }
     //ler o arquivo
     const jsonData = fs.readFileSync('users.json', 'utf-8');
     //converter o arquivo para um json
@@ -27,3 +43,5 @@ exports.ValidateLogin = (email, password) => {
     return true;
 
 }
+
+
